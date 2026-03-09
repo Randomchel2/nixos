@@ -1,0 +1,156 @@
+{
+    "layer": "top", //bottom, top, overlay
+    "output": ["*"],
+    "position":"top",// bottom, top, right, left
+    "height": 10,
+    "exclusive": true,
+    "passthrough": false,
+    "reload_style_on_change": true,
+    "include": [
+        "$XDG_CONFIG_HOME/waybar/includes/includes.json",
+        "$XDG_CONFIG_HOME/waybar/modules.jsonc" ,
+        "$XDG_CONFIG_HOME/waybar/modules.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/backlight.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/bluetooth.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/cava.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/clock.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/cpu.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-cava.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-clipboard.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-cliphist.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-cpuinfo.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-display.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-dunst.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-gamemode.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-github_hyde.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-gpuinfo#amd.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-gpuinfo#intel.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-gpuinfo.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-gpuinfo#nvidia.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-hyde-menu.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-hyprsunset.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-keybindhint.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-mediaplayer.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-power.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-powermenu.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-sensorsinfo.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-spotify.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-swaync.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-theme.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-updates.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-wallchange.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-wbar.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-weather.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-workflows.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/gamemode.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/group-eyecare.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/group-hide-tray.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/group-mediaplayer.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/group-volumecontrol.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/hyprland-language.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/hyprland-window.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/hyprland-workspaces.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/hyprland-workspaces#kanji.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/hyprland-workspaces#roman.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/idle_inhibitor.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/image#profile.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/image#wallpaper.json",
+        "$XDG_CONFIG_HOME/waybar/modules/image#wallpaper.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/memory.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/mpd.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/mpris.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/network#bandwidth.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/network.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/power-profiles-daemon.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/privacy.json",
+        "$XDG_CONFIG_HOME/waybar/modules/privacy.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/pulseaudio.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/pulseaudio#microphone.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/temperature.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/tray.json",
+        "$XDG_CONFIG_HOME/waybar/modules/tray.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/wlr-taskbar.json",
+        "$XDG_CONFIG_HOME/waybar/modules/wlr-taskbar.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/wlr-taskbar#windows.json",
+        "$XDG_CONFIG_HOME/waybar/modules/wlr-taskbar#windows.jsonc",
+        "$HOME/.config/waybar/modules.jsonc"
+
+    ],
+    "modules-left": [
+        "group/pill#left1",
+        "group/pill#left2"
+    ],
+    "group/pill#left1": {
+        "orientation": "inherit",
+        "modules": [
+            "custom/launcher",
+            "hyprland/workspaces",
+            "hyprland/window",
+            "custom/monitor_pills"
+        ]
+    },
+    "group/pill#left2": {
+        "orientation": "inherit",
+        "modules": [
+            "idle_inhibitor",
+            "clock"
+        ]
+    },
+
+    
+    "modules-center": [
+        "group/pill#center"
+    ],
+    "group/pill#center": {
+        "modules": [
+    "custom/temp",
+    "memory",
+    "custom/usage"
+        ],
+        "orientation": "inherit"
+    },
+    "modules-right": [
+        "group/pill#right1",
+        "group/pill#right2",
+        "group/pill#right3",
+        "group/pill#right4"
+    ],
+    "group/pill#right1": {
+        "modules": [
+            "network",
+            "pulseaudio",
+            "pulseaudio#microphone"
+        ],
+        "orientation": "inherit"
+    },
+    "group/pill#right2": {
+        "modules": [
+            "privacy",
+            "tray"
+        ],
+        "orientation": "inherit"
+    },
+    "custom/launcher": {
+    "format": "",
+    "on-click": "codium ~/.config/hypr/hyprland.conf"
+    },
+    "group/pill#right3": {
+        "orientation": "inherit",
+        "modules": [
+            "custom/files",
+            "custom/conf",
+            "custom/hyprconf"
+        ]
+    },
+    "group/pill#right4": {
+        "modules": [
+            "custom/wallchange",
+            "custom/theme",
+            "custom/wbar",
+            "custom/cliphist",
+            "custom/hyde-menu",
+            "custom/power"
+        ],
+        "orientation": "inherit"
+    }
+}
