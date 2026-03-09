@@ -35,4 +35,4 @@ sleep 0.2
 
 hyde-shell waybar -ubg
 
-notify-send "Waybar" "monitor configuration updated: $chosen" -t 2000
+notify-send "Waybar" "Конфигурация мониторов обновлена: $chosen" -t 2000
